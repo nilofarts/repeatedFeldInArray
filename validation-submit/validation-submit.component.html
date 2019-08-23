@@ -1,0 +1,16 @@
+<table class="table table-bordered">
+  <thead>
+      <th>id</th>
+    <th>description</th>
+    <th>Amount</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let trav of myArray">
+        <td>{{trav.id}}</td>
+      <td>{{trav.description}}</td>
+      <td>{{trav.Amount}}</td>
+    </tr>
+
+  </tbody>
+</table>
+<button (click)="submit()">Submit</button>
